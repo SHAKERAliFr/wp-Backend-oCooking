@@ -1,0 +1,17 @@
+vendor
+composer.lock
+wp
+wp-config.php
+.htaccess
+content/*
+!content/
+
+content/themes/*
+!content/themes/
+
+
+content/plugins/*
+!content/plugins/
+!content/plugins/ocooking/
+
+

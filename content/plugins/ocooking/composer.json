@@ -1,0 +1,13 @@
+{
+    "autoload": {
+      "psr-4": {
+        "OCooking\\": "./class"
+      }
+    },
+    "config": {
+      "vendor-dir": "vendor-ocooking"
+    },
+    "require": {
+        "altorouter/altorouter": "^2.0"
+    }
+}
