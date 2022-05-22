@@ -48,7 +48,8 @@ class Plugin
                     'comments'
                 ],
                 'capability_type' => 'recipe',
-                'map_meta_cap' => true
+                'map_meta_cap' => true,
+                'show_in_rest' => true,
             ]
         );
     }
@@ -86,7 +87,8 @@ class Plugin
             [
                 'label' => 'Ingrédient',
                 'hierarchical' => true,
-                'public' => true
+                'public' => true,
+                'show_in_rest' => true,
             ]
         );
     }
@@ -101,7 +103,8 @@ class Plugin
             [
                 'label' => 'Type de recette',
                 'hierarchical' => false,
-                'public' => true
+                'public' => true,
+                'show_in_rest' => true,
             ]
         );
     }
@@ -116,7 +119,8 @@ class Plugin
             [
                 'label' => 'Difficulté',
                 'hierarchical' => true,
-                'public' => true
+                'public' => true,
+                'show_in_rest' => true,
             ]
         );
     }
@@ -128,7 +132,7 @@ class Plugin
 
     public function deactivate()
     {
-        remove_role('chef'); //! warning ne pasoublier de remove_role à la désactivation du plugin
+        remove_role('chef'); //! warning!!! ne pas oublier de remove_role à la désactivation du plugin
     }
     public function registerChefRole() //! methode appelé à l'activation du plugin
     {
