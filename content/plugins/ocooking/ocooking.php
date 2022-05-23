@@ -8,6 +8,7 @@
 
 
 use OCooking\Plugin;
+use OCooking\Api;
 
 require __DIR__ . '/vendor-ocooking/autoload.php';
 $ocooking = new Plugin();
@@ -29,3 +30,4 @@ register_deactivation_hook(
     __FILE__,
     [$ocooking, 'deactivate']
 );
+$api = new Api();
